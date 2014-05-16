@@ -13,3 +13,7 @@ parameters:
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    do_client_id:      ~
+    do_api_key:        ~
+    do_api_url:        https://api.digitalocean.com/v1/

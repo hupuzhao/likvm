@@ -16,6 +16,19 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Acme\HelloBundle\AcmeHelloBundle(),
+            new Acme\TestBundle\AcmeTestBundle(),
+            new Likvm\DoBundle\LikvmDoBundle(),
+            new Lsw\ApiCallerBundle\LswApiCallerBundle(),
+
+            new FOS\UserBundle\FOSUserBundle(),
+            new Likvm\UserBundle\LikvmUserBundle(),
+
+            new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new Craue\FormFlowBundle\CraueFormFlowBundle(),
+            new Acme\StoreBundle\AcmeStoreBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

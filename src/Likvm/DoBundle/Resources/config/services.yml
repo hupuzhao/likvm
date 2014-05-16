@@ -1,0 +1,7 @@
+parameters:
+#    likvm_do.example.class: Likvm\DoBundle\Example
+
+services:
+#    likvm_do.example:
+#        class: %likvm_do.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

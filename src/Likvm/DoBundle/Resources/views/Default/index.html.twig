@@ -1,0 +1,29 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+{% for droplet in droplets %}
+    <dt>ID</dt>
+    <dd>{{ droplet.id }}</dd>
+    <dt>Name</dt>
+    <dd>{{ droplet.name }}</dd>
+    <dt>Image ID</dt>
+    <dd>{{ droplet.image_id }}</dd>
+    <dt>Size ID</dt>
+    <dd>{{ droplet.size_id }}</dd>
+    <dt>Region ID</dt>
+    <dd>{{ droplet.region_id }}</dd>
+    <dt>Backup active</dt>
+    <dd>{{ droplet.backups_active ? 'Yes' : 'No'}}</dd>
+    <dt>IP address</dt>
+    <dd>{{ droplet.ip_address }}</dd>
+    <dt>Private IP address</dt>
+    <dd>{{ droplet.private_ip_address }}</dd>
+    <dt>Locked</dt>
+    <dd>{{ droplet.locked? 'Yes' : 'No' }}</dd>
+    <dt>Status</dt>
+    <dd>{{ droplet.status }}</dd>
+    <dt>Created</dt>
+    <dd>{{ droplet.created_at }}</dd>
+{% endfor %}
+
+
+{% endblock %}

@@ -1,0 +1,3 @@
+likvm_do_homepage:
+    pattern:  /do/show
+    defaults: { _controller: LikvmDoBundle:Default:index }
